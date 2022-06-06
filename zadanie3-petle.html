@@ -1,9 +1,17 @@
 <script>
     let a = Number(prompt("Podaj a"));
     let b = Number(prompt("Podaj b"));
-
-    for (let a = 0; a < b; a++) {
-        document.write(a)
-        
+    if(a<b){
+            document.write("Ciąg jest rosnący ")
+            for (let i = a; i < b; i++) {
+        document.write(i+1)
     }
+}
+    if(b<a){
+            document.write("Ciąg jest malejący ")
+            for (let j = a; j < b; j--) {
+        document.write(j-1)
+    }
+        }
+   
 </script>
